@@ -6,6 +6,10 @@ $('._anchor').click(function(e){
     }, 600);
 });
 
+$('.header__burger').on("click", function () {
+    $('.header__burger, .header__items').toggleClass('_active');
+    $('body').toggleClass('lock');
+});
 
 const popupLinks = document.querySelectorAll('.popup__link');
 const body = document.querySelector('body');
